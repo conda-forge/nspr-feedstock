@@ -15,8 +15,8 @@ build:
 
 requirements:
   build:
-    - {{ compile('c') }}
-    - {{ compile('cxx') }}
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - make
     - autoconf
 
