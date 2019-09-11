@@ -4,5 +4,5 @@ cd nspr
 
 ./configure --prefix="${PREFIX}" --enable-64bit --disable-debug --enable-optimize 
 
-gmake -j $CPU_COUNT
-gmake install
+make -j $CPU_COUNT
+make install
