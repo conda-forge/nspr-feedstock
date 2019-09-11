@@ -17,7 +17,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - gmake
+    - make
     - autoconf
 
 test:
@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR
-  license: MPL 2
+  license: MPL-2.0
   license_file: nspr/LICENSE
   summary: A platform-neutral API for system level and libc-like functions.
   description: |
