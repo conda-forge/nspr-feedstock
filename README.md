@@ -3,7 +3,7 @@ About nspr
 
 Home: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR
 
-Package license: MPL 2
+Package license: MPL-2.0
 
 Feedstock license: BSD 3-Clause
 
@@ -31,7 +31,7 @@ Current build status
     <td>Drone</td>
     <td>
       <a href="https://cloud.drone.io/conda-forge/nspr-feedstock">
-        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/master.svg?label=Linux">
+        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/nspr-feedstock/master.svg?label=Linux">
       </a>
     </td>
   </tr>
