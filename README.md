@@ -5,7 +5,7 @@ Home: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR
 
 Package license: MPL-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A platform-neutral API for system level and libc-like functions.
 
