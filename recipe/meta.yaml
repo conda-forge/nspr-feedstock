@@ -21,12 +21,11 @@ requirements:
 
 test:
   commands:
-    - test -f ${PREFIX}/lib/libnspr4.a                   # [unix]
     - test -f ${PREFIX}/lib/libnspr4${SHLIB_EXT}         # [unix]
-    - test -f ${PREFIX}/lib/libplc4.a                    # [unix]
     - test -f ${PREFIX}/lib/libplc4${SHLIB_EXT}          # [unix]
-    - test -f ${PREFIX}/lib/libplds4.a                   # [unix]
     - test -f ${PREFIX}/lib/libplds4${SHLIB_EXT}         # [unix]
+    - test -d ${PREFIX}/include/nspr                     # [unix]
+    - test -f ${PREFIX}/bin/nspr-config                  # [unix]
 
 about:
   home: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR
