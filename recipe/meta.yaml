@@ -5,12 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  fn: nspr-{{ version }}.tgz
   url: https://ftp.mozilla.org/pub/nspr/releases/v{{ version }}/src/nspr-{{ version }}.tar.gz
   sha256: 6d495192b6ab00a3c28db053492cf794329f7c0351a5728db198111a1816e89b
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or osx]
 
 requirements:
@@ -19,15 +18,15 @@ requirements:
     - {{ compiler('cxx') }}
     - make
     - autoconf
+    - sed
 
 test:
   commands:
-    - test -f ${PREFIX}/lib/libnspr4.a                   # [unix]
     - test -f ${PREFIX}/lib/libnspr4${SHLIB_EXT}         # [unix]
-    - test -f ${PREFIX}/lib/libplc4.a                    # [unix]
     - test -f ${PREFIX}/lib/libplc4${SHLIB_EXT}          # [unix]
-    - test -f ${PREFIX}/lib/libplds4.a                   # [unix]
     - test -f ${PREFIX}/lib/libplds4${SHLIB_EXT}         # [unix]
+    - test -d ${PREFIX}/include/nspr                     # [unix]
+    - test -f ${PREFIX}/bin/nspr-config                  # [unix]
 
 about:
   home: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR
