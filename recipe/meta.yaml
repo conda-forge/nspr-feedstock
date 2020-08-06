@@ -18,6 +18,7 @@ requirements:
     - {{ compiler('cxx') }}
     - make
     - autoconf
+    - sed
 
 test:
   commands:
