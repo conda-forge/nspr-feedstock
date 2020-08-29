@@ -19,6 +19,9 @@ requirements:
     - make
     - autoconf
     - sed
+  # https://github.com/Quansight/omnisci/issues/20#issuecomment-422294770
+  run_constrained:
+    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.13") }}  # [osx]
 
 test:
   commands:
