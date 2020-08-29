@@ -9,7 +9,7 @@ source:
   sha256: 63defc8e19a80b6f98fcc7d5a89e84ea703c0b50aa6bc13bf7ad071adf433b56
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or osx]
   run_exports:
     - {{ pin_subpackage('nspr', max_pin='x') }}
