@@ -5,9 +5,13 @@ Home: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR
 
 Package license: MPL-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nspr-feedstock/blob/master/LICENSE.txt)
 
 Summary: A platform-neutral API for system level and libc-like functions.
+
+Development: https://developer.mozilla.org/en-US/docs/MDN
+
+Documentation: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR
 
 NetScape Portable Runtime (NSPR) provides platform independence for
 non-GUI operating system facilities. These facilities include threads,
