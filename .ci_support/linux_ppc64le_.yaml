@@ -14,3 +14,6 @@ docker_image:
 - condaforge/linux-anvil-ppc64le
 target_platform:
 - linux-ppc64le
+zip_keys:
+- - c_compiler_version
+  - cxx_compiler_version
