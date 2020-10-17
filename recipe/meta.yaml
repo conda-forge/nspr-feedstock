@@ -10,7 +10,7 @@ source:
 
 build:
   number: 1
-  skip: true  # [win or osx]
+  skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('nspr', max_pin='x') }}
 
@@ -21,6 +21,9 @@ requirements:
     - make
     - autoconf
     - sed
+  # https://github.com/Quansight/omnisci/issues/20#issuecomment-422294770
+  run_constrained:
+    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.13") }}  # [osx]
 
 test:
   commands:
