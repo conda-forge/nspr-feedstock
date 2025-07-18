@@ -16,11 +16,11 @@ build:
 
 requirements:
   build:
-    - gnuconfig  # [unix]
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - make
+    - gnuconfig
     - autoconf
     - sed
 
