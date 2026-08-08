@@ -2,7 +2,7 @@
 
 package:
   name: nspr
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://ftp.mozilla.org/pub/nspr/releases/v{{ version }}/src/nspr-{{ version }}.tar.gz
