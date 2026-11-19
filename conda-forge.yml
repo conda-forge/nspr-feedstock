@@ -1,7 +1,6 @@
 bot:
   automerge: true
 build_platform:
-  osx_arm64: osx_64
   win_arm64: win_arm64
 conda_build:
   pkg_format: '2'
@@ -13,4 +12,5 @@ provider:
   linux_aarch64: default
   linux_ppc64le: azure
   win_arm64: default
+  osx_arm64: default
 test: native_and_emulated
